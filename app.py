@@ -6,6 +6,8 @@ from dash import Dash, dcc, html, Input, Output
 # Inicializar o aplicativo Dash
 app = Dash(__name__)
 
+server = app.server
+
 # Ler o arquivo Excel
 file_path = 'Planilha Geral - Índice Trilema Brasil.xlsx'
 df = pd.read_excel(file_path, sheet_name='Trilema energético')
